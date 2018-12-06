@@ -1,0 +1,59 @@
+{
+  "name": "premium-friday",
+  "version": "0.0.1",
+  "description": "JavaScript library for Premium Friday",
+  "main": "build/index.js",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "Premium Friday"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shooontan/premium-friday.git"
+  },
+  "scripts": {
+    "build": "rm -rf build && tsc",
+    "lint": "tslint -p . -c tslint.json",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/mockdate": "^2.0.0",
+    "@types/node": "^10.12.12",
+    "jest": "^23.6.0",
+    "mockdate": "^2.0.2",
+    "prettier": "^1.15.3",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.2.1"
+  },
+  "files": [
+    "build"
+  ],
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/*.test.ts"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "!src/**/*.d.ts"
+    ]
+  }
+}
