@@ -19,7 +19,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.10",
+    "@types/jest": "26.0.23",
     "@types/mockdate": "^2.0.0",
     "@types/node": "^10.12.12",
     "jest": "^23.6.0",
